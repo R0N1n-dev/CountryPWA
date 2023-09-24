@@ -3,7 +3,7 @@
         <vs-navbar v-model="activeItem" class="nabarx">
             <div slot="title">
                 <vs-navbar-title>
-                    Hello world
+                    COUNTRY & CITY SEARCH
                 </vs-navbar-title>
             </div>
 

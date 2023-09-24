@@ -1,6 +1,6 @@
 <template>
     <div>
-        <vs-table align="center" multiple v-model="selected" pagination max-items="20" search :data="countries">
+        <vs-table align="center" multiple v-model="selected" pagination max-items="20" search :data="store.countries">
             <!--<template slot="header">
                 <h3>
                     Countries
@@ -45,12 +45,10 @@
     </div>
 </template>
   
-<script>
-import countries from "../assets/countries.json";
-export default {
-    data: () => ({
-        countries,
-        selected: []
-    }),
-};
+
+<script setup>
+import { useCountryStore } from "../stores/country";
+const store = useCountryStore();
+const selected = ref([]);
 </script>
+

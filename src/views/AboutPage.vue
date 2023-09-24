@@ -1,5 +1,6 @@
 <template>
     <div>
-        <p>AboutPage</p>
+        <Searchpage />
     </div>
 </template>
+
